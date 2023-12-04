@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<div id="app">
+
+    <h1>ToDoLISTA</h1>
+
+    <main class="wrapper">
+
+        <div>
+            <input type="text" placeholder="inserisci" name="newToDo" v-model="newTodoElement">
+            <button @click="addNewTodoItem">Add</button>
+        </div>  
+        
+        <div class="item" v-for="(element, index) in todoList" :key="index">
+            <div class="todo">
+                <p>
+                     {{ todoList[index].text }}
+                </p>
+                <span id="check"><i class="fa-solid fa-check"></i></span>
+                <span id="delete"><i class="fa-solid fa-trash" @click="removeTodoElement"></i></span>
+                
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

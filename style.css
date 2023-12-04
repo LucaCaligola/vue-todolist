@@ -1,0 +1,56 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+button {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    background-color: rgb(41, 233, 41);
+    color: white;
+    border: none;
+
+}
+input {
+    padding: 0.5rem;
+}
+
+.todo {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px ;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    text-align: center;
+    margin: 15px auto;
+    
+}
+
+.sbarrato {
+    text-decoration: line-through;
+}
+
+#check {
+    color: green;
+    padding-left: 1rem;
+}
+
+#delete {
+    color: rgb(255, 0, 25);
+    padding-left: 1rem;
+}
