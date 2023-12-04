@@ -9,15 +9,16 @@ createApp({
                 {text: "augurare buon compleanno allo zio", done: false},
                 {text: "comprare il cibo per il gatto", done: false},
                 {text: "chiamare il dottore", done: false}
+                
 
 
             ]
         }
     },
     methods: {
-        addNewTodoItem(newElement){
-            newElement = newElement.trim();
-            console.warn(newElement);
+        addNewTodoItem(newTodoElement){
+            newTodoElement = newElement.trim();
+            console.warn(newTodoElement);
 
 
             if (newElement.length > 3){
