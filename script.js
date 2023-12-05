@@ -9,6 +9,7 @@ createApp({
                 {text: "augurare buon compleanno allo zio", done: false},
                 {text: "comprare il cibo per il gatto", done: false},
                 {text: "chiamare il dottore", done: false}
+            
                 
 
 
@@ -17,14 +18,15 @@ createApp({
     },
     methods: {
         addNewTodoItem(newTodoElement){
-            newTodoElement = newElement.trim();
-            console.warn(newTodoElement);
+           
+            console.log(this.newTodoElement);
 
 
-            if (newElement.length > 3){
-                this.newTodoElement = '';
-                this.todoList.push(newElement);
-            }
+            this.todoList.push({text: this.newTodoElement, done: false});
+            
+            this.newTodoElement = '';
+            
+           
            
         },
 
@@ -34,7 +36,9 @@ createApp({
             this.todoList.splice(index, 1);
         }
 
-        // doneIsTrue(status){
+
+
+        // doneIsTrue(index){
         //     if(todoList.done === true) {
                 
 
